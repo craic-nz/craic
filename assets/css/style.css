@@ -21,7 +21,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--void);
@@ -241,4 +241,26 @@ section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
   .nav-toggle { display: block; }
   .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   body { font-size: 16px; }
+}
+
+/* ---------- brand wordmark (keep craic + .nz tight) ---------- */
+.brand .word { white-space: nowrap; }
+
+/* ---------- mobile-safe wide tables ---------- */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.2rem 0; }
+.table-scroll table { margin: 0; }
+.markdown { overflow-wrap: break-word; }
+
+/* ---------- mobile refinements ---------- */
+@media (max-width: 640px) {
+  body { overflow-x: clip; }
+  .wrap { padding: 0 18px; }
+  .hero { padding-top: 2.4rem; }
+  .terminal { margin-top: 1.8rem; }
+  .terminal-body { font-size: .74rem; line-height: 1.85; overflow-x: auto; }
+  .doc-layout { padding-top: 1.6rem; }
+  .markdown table { font-size: .82rem; }
+  .markdown pre { font-size: .8rem; }
+  .footer-links { gap: 1.6rem; }
+  .hero-actions .btn { flex: 1 1 auto; justify-content: center; }
 }

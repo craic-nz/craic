@@ -38,6 +38,13 @@
       if (window.marked) {
         marked.setOptions({ gfm: true, breaks: false });
         bodyEl.innerHTML = marked.parse(md);
+        // make wide tables horizontally scrollable on small screens
+        Array.prototype.forEach.call(bodyEl.querySelectorAll("table"), function (t) {
+          var wrap = document.createElement("div");
+          wrap.className = "table-scroll";
+          t.parentNode.insertBefore(wrap, t);
+          wrap.appendChild(t);
+        });
       } else {
         bodyEl.textContent = md;
       }
