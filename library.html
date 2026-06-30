@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library — craic.nz</title>
+<meta name="description" content="AI prompts, templates and guides for NZ Government information management, privacy and information security professionals.">
+<link rel="icon" href="assets/img/craic-favicon.svg">
+<meta property="og:title" content="Library — craic.nz">
+<meta property="og:description" content="Free AI prompts, templates and guides for NZ Government information professionals.">
+<meta property="og:image" content="https://craic.nz/assets/img/craic-social-share.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/img/craic-shamrock-emerald.svg" alt=""> craic<span class="tld">.nz</span></a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="library.html" class="active">Library</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="https://github.com/craic-nz/craic" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1.5rem;">
+    <div class="wrap">
+      <span class="kicker mono">craic ~ library %</span>
+      <h1>The library</h1>
+      <p class="lead">Free, reusable resources for information management, privacy and information security work in the New Zealand public sector. Filter by type or search by keyword. Every item can be viewed, copied or downloaded.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="toolbar">
+        <input class="search" data-search type="search" placeholder="search resources, e.g. disposal, PIA, classification" aria-label="Search resources">
+        <div class="filters">
+          <button class="chip active" data-cat="all">All</button>
+          <button class="chip" data-cat="prompt">AI prompts</button>
+          <button class="chip" data-cat="template">Templates</button>
+          <button class="chip" data-cat="guide">Guides</button>
+          <button class="chip" data-cat="link">Links</button>
+        </div>
+      </div>
+      <p class="mono" style="color:var(--muted); font-size:.82rem; margin-bottom:1.4rem;"><span data-count></span></p>
+      <div class="grid grid-3" data-catalogue></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border:0; margin:0; padding:0;">
+      <span>&copy; <span data-year>2026</span> craic.nz &middot; a free, independent resource</span>
+      <span><a href="about.html">About &amp; disclaimer</a> &middot; <a href="mailto:Sam@craic.nz">Sam@craic.nz</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/resources.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
